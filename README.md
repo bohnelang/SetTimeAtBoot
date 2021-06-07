@@ -1,6 +1,6 @@
 # SetTimeAtBoot
 
-If there is no time set at boot time of a Linux server, you should do this. Otherwise ntp cannor run of a too large gap. 
+If there is no time set at boot time of a Linux server, you should do this. Otherwise ntp cannot run of a too large time gap. 
 
 
 Thus create an entry at /etc/rc.local to set the local time at boot-time 
