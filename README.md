@@ -9,7 +9,7 @@ Thus create an entry at /etc/rc.local to set the local time at boot-time
 ```
 if test "`which wget`" != ""
 then
-        date --set="`wget -S http://www.google.de/ 2>&1  | grep "Date:" | sed s/Date://g`"
+        date --set="`wget -S http://www.google.de/ 2>&1  | grep "Date:" | sed s/Date://g` | head -n 1"
 fi
 
 # Maybe you should do a restart of the system time daemon afterwards
